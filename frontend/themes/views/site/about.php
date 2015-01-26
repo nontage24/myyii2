@@ -10,5 +10,13 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <p>This is the About page. You may modify the following file to customize its content:</p>
 
-    <code><?= __FILE__ ?></code>
+    <code><?= __FILE__ ?></code><br>
+    <code><?= __DIR__ ?></code><br>
+     @app= <?=\Yii::getAlias('@app')?><br>
+     @webroot= <?=\Yii::getAlias('@webroot')?><br>
+     @web= <?=\Yii::getAlias('@web')?><br>
+     @frontend= <?=\Yii::getAlias('@frontend')?><br>
+     @backend= <?=\Yii::getAlias('@backend')?><br>
+     
+     
 </div>

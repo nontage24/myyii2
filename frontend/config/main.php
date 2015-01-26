@@ -1,9 +1,7 @@
 <?php
+
 $params = array_merge(
-    require(__DIR__ . '/../../common/config/params.php'),
-    require(__DIR__ . '/../../common/config/params-local.php'),
-    require(__DIR__ . '/params.php'),
-    require(__DIR__ . '/params-local.php')
+        require(__DIR__ . '/../../common/config/params.php'), require(__DIR__ . '/../../common/config/params-local.php'), require(__DIR__ . '/params.php'), require(__DIR__ . '/params-local.php')
 );
 
 return [
@@ -12,13 +10,10 @@ return [
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
-        'view'=>[
+        'view' => [
             'theme' => [
-                'pathMap' => [
-                    '@frontend/views' => [
-                        '@frontend/themes/views',
-                    ]
-                ],
+                'pathMap' => ['@app/views' => ['@app/themes/views']],
+                //'baseUrl' => '@web/themes/views',
             ],
         ],
         'user' => [
